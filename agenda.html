@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="agenda.css"/>
+    <title>AGENDA</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <div id="div-menu-hamb">
+        <a href=""><img id="menu-hamb" src="fichiers/hamburger-menu.PNG" alt="menu hamburger"></a>
+        </div>
+
+        <div id="div-img-agenda">
+        <img id="logo-agenda" src="fichiers/address-book.png" alt="logo agenda">
+        </div>
+
+        <h1>AGENDA</h1>
+
+        <a href="" title="Semaine précédente"><img class="fleches" src="fichiers/left-arrow.png" alt="boutton gauche"></a>
+        <a href="" title="Semaine suivante"><img class="fleches" src="fichiers/right-arrow.png" alt="bouton droite"></a>
+
+        <h2>OCTOBRE 2020</h2>
+
+        <form method="post" action="form.php">
+        <select name="pets" id="pet-select">
+            <option value="jour">Jour</option>
+            <option value="semaine" selected>Semaine</option>
+            <option value="mois">Mois</option>
+            <option value="trimestre">Trimestre</option>
+            <option value="année">Année</option>
+        </select>
+        </form>
+
+
+
+    </header>
+
+    
+    <main>
+
+
+
+        <aside>
+
+            <form action="" method="POST">
+                    <button id="boutton-creer">
+                        <img id="img-bouton-creer" src="fichiers/plus.png" alt="créer">
+                        <h4>Créer</h4>
+                    </button>
+            </form>
+
+            <table id="mini-agenda">
+                    <tr>
+                        <th colspan="5">OCTOBRE</th>  
+                        <td><a href="" title="Mois précédent"><img class="bouttons-mini-agenda" src="fichiers/left-arrow.png" alt="boutton gauche"></a></td>
+                        <td><a href="" title="Mois suivant"><img class="bouttons-mini-agenda" src="fichiers/right-arrow.png" alt="boutton droit"></a></td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td>J</td>
+                        <td>V</td>
+                        <td>S</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td class="autre-mois">28</td>
+                        <td class="autre-mois">29</td>
+                        <td class="autre-mois">30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>  
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td class="autre-mois">1</td>
+                    </tr>
+            </table>
+
+       
+            <div id="mes-agendas">
+                <h3>Mes agendas</h3>
+                <form id="form-mes-agendas" action="">
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Alexandre-Leroux" id="Alexandre-Leroux" checked/> <label for="Alexandre-Leroux">Alexandre Leroux</label></div>
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Mamie-Simone" id="Mamie-Simone" /> <label for="Mamie-Simone">Mamie Simone</label></div>
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Création-de-chandeliers" id="Création-de-chandeliers" checked /> <label for="Création-de-chandeliers">Création de chandeliers</label></div>
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Soirée-repassage" id="Soirée-repassage" /> <label for="Soirée-repassage">Soirée repassage</label></div>
+                </form>
+            </div>
+
+        </aside>
+
+
+
+
+        <section id="agenda">
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+</body>
+
+
+</html>
