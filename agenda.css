@@ -188,6 +188,19 @@ input[type=checkbox] + label {
     border-color: crimson;
     color: #fff;
   }
+
+  input[type=checkbox]:checked + label[for="Création-de-chandeliers"]:before {
+    background-color:  rgb(211, 237, 67);;
+    border-color:  rgb(211, 237, 67);;
+    color: #fff;
+  }
+
+  input[type=checkbox]:checked + label[for="Soirée-repassage"]:before {
+    background-color: rgb(67, 237, 73);
+    border-color:  rgb(67, 237, 73);
+    color: #fff;
+  }
+  
   
   input[type=checkbox]:disabled + label:before {
     transform: scale(1);
@@ -277,4 +290,29 @@ thead th{
     color: white;
     padding: 5px;
     border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------formulaire crerre*/
+
+
+
+
+#formulaire-creer{
+
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 25vh; left: 25vw;
+    box-shadow: 0px  0px 40px black;
+    border-radius: 20px;
+    
 }
