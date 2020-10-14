@@ -37,18 +37,14 @@
         </select>
         </form>
 
-
-
     </header>
 
     
     <main>
 
-
-
         <aside>
 
-            <form action="" method="POST">
+            <form action="formulaire.html" method="POST">
                     <button id="boutton-creer">
                         <img id="img-bouton-creer" src="fichiers/plus.png" alt="créer">
                         <h4>Créer</h4>
@@ -160,7 +156,7 @@
                     <tr class="bordure-td">
                         <td rowspan="2">1 am</td>
                         <td></td>
-                        <td rowspan="5" class="agenda-mamie">Voir mamie à l'hopital</td>
+                        <td rowspan="5" class="agenda-mamie"><strong>Voir mamie à l'hopital</strong><br>0 à 3 am </td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -242,7 +238,7 @@
                     </tr>
                     <tr>
                         <td rowspan="2">5 am</td>
-                        <td class="agenda-alex" rowspan="4">Train</td>
+                        <td class="agenda-alex" rowspan="4"><strong>Train</strong><br>4:30 à 6:30 am</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -277,7 +273,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class=agenda-mamie rowspan="2">Départ à Las-Vegas pour fêter mamie</td>
+                        <td class=agenda-mamie rowspan="2"><strong>Départ à Las-Vegas pour fêter mamie</strong><br>6 à 7 am</td>
                      
                      
                     </tr>
@@ -295,7 +291,7 @@
                       
                         <td></td>
                         <td></td>
-                        <td class="creation-chandeliers"  rowspan="10" >Atelier chandeliers</td>
+                        <td class="creation-chandeliers"  rowspan="10" ><strong>Atelier chandeliers</strong><br>7 à 12 am</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -318,7 +314,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class=agenda-mamie rowspan="4">Enterrement de mamie</td>
+                        <td class=agenda-mamie rowspan="4"><strong>Enterrement de mamie</strong><br>8 à 10 am</td>
                         <td></td>
                        
                      
@@ -334,7 +330,7 @@
                      
                     </tr>
                     <tr>
-                        <td class="agenda-mamie" rowspan="6">Notaire pour mamie</td>
+                        <td class="agenda-mamie" rowspan="6"><strong>Notaire pour mamie</strong><br>9 à 12 am</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -479,7 +475,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td  class="agenda-alex" rowspan="4">Train retour</td>
+                        <td  class="agenda-alex" rowspan="4"><strong>Train retour</strong><br>4 à 6 pm</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -540,7 +536,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class="agenda-repassage" rowspan="8">Repassage de chemises avec les amis</td>
+                        <td class="agenda-repassage" rowspan="8"><strong>Repassage de chemises avec les amis</strong><br>7 à 11 pm</td>
                         <td></td>
                         <td></td>
                      
@@ -635,22 +631,109 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
             </table>
 
 
                 
          </section>
 
+         <section id="formulaire-creer">
 
 
-<div id="formulaire-creer">
+            <form id="formulaire" action="agenda.html">
+        
+                <label for="titre"></label>
+                <input type="text" name="titre" id="titre" size="30"  placeholder="Ajouter un titre" />
+        
+                <div class="lignes-formulaire">
+                    <img src="fichiers/date.PNG" alt="date">
+                    <label for="date"></label>
+                    <input type="date" name="date" id="date" placeholder="date" size="30" maxlength="10" />
+                    <label for="heure"></label><br />
+                    <select name="heure" id="heure">
+                        <option disabled selected value="H">H</option  >
+                        <option value="00">00</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="1">4</option>
+                        <option value="2">5</option>
+                        <option value="3">6</option>
+                        <option value="1">7</option>
+                        <option value="2">8</option>
+                        <option value="3">9</option>
+                        <option value="1">10</option>
+                        <option value="2">11</option>
+                        <option value="3">12</option>
+                        <option value="1">13</option>
+                        <option value="2">14</option>
+                        <option value="3">15</option>
+                        <option value="1">16</option>
+                        <option value="2">17</option>
+                        <option value="3">18</option>
+                        <option value="1">19</option>
+                        <option value="2">20</option>
+                        <option value="3">21</option>
+                        <option value="1">22</option>
+                        <option value="2">23</option>
+                    </select>
+                    <label for="minutes"></label><br />
+                    <select name="minutes" id="minutes">
+                        <option disabled selected value="Min">Min</option  >
+                        <option value="00">00</option>
+                        <option value="1">15</option>
+                        <option value="2">30</option>
+                        <option value="3">45</option>
+                    </select>
+                </div>
+
+                <div class="lignes-formulaire">
+                    <img src="fichiers/gps.PNG" alt="date">
+                    <label for="lieu"></label>
+                    <input type="text" name="lieu" id="lieu"  size="30"  placeholder="Ajouter un lieu" />
+                </div>
+
+                <div class="lignes-formulaire">
+                    <img src="fichiers/text-spacing.png" alt="texte">
+                    <label for="Description"></label>
+                    <textarea name="Description" id="Description" cols="40" rows="4" placeholder="Description" value="Description"></textarea>
+                </div>
+
+                <div class="lignes-formulaire">
+                    <img src="fichiers/agenda.PNG" alt="date">
+                    <label for="Agenda"></label><br />
+                    <select name="pays" id="pays">
+                        <option disabled selected value="choix agenda">Choix de l'agenda</option>
+                        <option id="AL" value="Alexandre Leroux">Alexandre Leroux</option>
+                        <option id="MS" value="Mamie Simone">Mamie Simone</option>
+                         <option id="SR" value="Soirée repassage">Soirée repassage</option>
+                        <option id="CDC" value="Création de chandeliers">Création de chandeliers</option>
+                    </select>
+                </div>
+        
+                <div id="div-boutton-enregistrer" class="lignes-formulaire">
+
+                    <button id="boutton-enregistrer">
+                        <H1>ENREGISTRER</H1>
+                    </button>
+                </div>
 
 
-gfqdgfqdgfdqgfdqg
-
-
-</div>
-
+            </form>
+        
+        
+        </section>
 
     </main>
 

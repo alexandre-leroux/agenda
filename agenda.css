@@ -22,6 +22,7 @@ header{
 #div-menu-hamb{
     width: 5vw;
     padding-left: 2vw;
+    position: static;
 }
 #menu-hamb{
     height: 5vh;
@@ -304,19 +305,87 @@ thead th{
 
 
 
-/*---------------------------------------------------------formulaire crerre*/
+/*---------------------------------------------------------formulaire creer*/
 
 
 
 
 #formulaire-creer{
 
-    width: 50vw;
-    height: 50vh;
-    background-color: rgb(238, 238, 238);
+    width: 40vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 25vh; left: 25vw;
+    top: 15vh; left: 30vw;
     box-shadow: 0px  0px 40px black;
     border-radius: 20px;
+    padding: 10px;
     
+}
+#formulaire-creer img{
+height: 60px;
+}
+#formulaire-creer input, select, option, textarea{
+    height: 40px;
+    color: rgb(150, 150, 150);
+    margin-left: 10%;
+}
+
+
+#formulaire{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.lignes-formulaire{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#formulaire-creer #titre{
+    height: 60px;
+    width: 100%;
+    font-size: 2em;
+    border-bottom: solid 3px blueviolet;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+#boutton-enregistrer{
+    background-color:  blueviolet;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+}
+#div-boutton-enregistrer{
+    justify-content: center;
+    height: 10%;
+}
+
+
+#AL{
+    background-color: rgb(40, 20, 220);
+    color: white;
+}
+#MS{
+    background-color:  crimson;
+    color: white;
+}
+#SR{
+    background-color: rgb(67, 237, 73);
+    color: white;
+}
+#CDC{
+    background-color: rgb(211, 237, 67);
+    color: white;
 }
