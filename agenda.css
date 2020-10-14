@@ -342,7 +342,7 @@ height: 60px;
 .lignes-formulaire{
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 #formulaire-creer #titre{
@@ -360,16 +360,20 @@ height: 60px;
 
 
 #boutton-enregistrer{
+    
     background-color:  blueviolet;
-    width: 30%;
+    width: 70%;
     height: 100%;
     border-radius: 10px;
     border-style: none;
     color: white;
+    
 }
 #div-boutton-enregistrer{
     justify-content: center;
     height: 10%;
+    width: 60%;
+    margin: auto;
 }
 
 
